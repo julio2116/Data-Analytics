@@ -1,12 +1,13 @@
 *{
     margin: 0;
+    
 }
 ul{
     list-style: none;
     padding: 0;
     margin: 0;
 }
-a {
+.menu-link {
     text-decoration: none;
     color: white;
 }
@@ -30,8 +31,8 @@ a {
     position: absolute;
 }
 .submenu{
-    visibility:hidden;
-    background-color: blue;
+    visibility: hidden;
+    background-color: black;
     top:calc(100% + 6px);
     opacity: 0;
     display: flex;
@@ -46,7 +47,7 @@ a {
     opacity: 1;
 }
 .menu-link:hover{
-    color:black;
+    color: #1786bd;
 }
 .submenu > .menu-item{
     padding:10px;
@@ -85,6 +86,7 @@ a {
  }
 .item-menu-2{
     font-size:20px;
+    color: white;
  }
 #s{
     position: relative;
@@ -147,4 +149,94 @@ footer{
     color: white;
     display: flex;
     align-items: center;   
+}
+.login-button{
+    height: 40px;
+    width: 120px;
+    position: absolute;
+    margin: 80px;
+    background-color: black;
+    color:white;
+}
+.login-button:hover{
+    filter: blur(1px);
+    filter: drop-shadow(0 0 0.75rem #1786bd);
+    color: #1786bd;
+}
+#login{
+    top:30%;
+    position: absolute;
+    display:flex;
+    height: 50%;
+    align-items: auto;
+    justify-items: auto;
+    color: blue;
+}
+
+
+.card {
+    background-color: rgba(19, 19, 19, 0.3);
+    padding: 40px;
+    border-radius: 2px;
+    width:280px;
+    opacity: 100%;
+}
+
+.card-header {
+    padding-bottom: 50px;
+    opacity: 0.8;
+    color: #fff;
+}
+
+.card-header::after {
+    content: "";
+    width: 70px;
+    height: 1px;
+    background-color: #fff;
+    display: block;
+    margin-left: -5px;
+}
+
+.card-content label {
+    color: #fff;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.card-content-area {
+    display: flex;
+    flex-direction: column;
+    padding:10px 0;
+}
+
+.card-content-area input {
+    margin-top: 10px;
+    padding:0 5px;
+    background-color: transparent;
+    border:none;
+    border-bottom: 1px solid #e1e1e1;
+    outline: none;
+    color: #fff;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-footer .submit{
+    width: 100%;
+    height: 40px;
+    background-color: #a13854;
+    border:none;
+    color:#e1e1e1;
+    margin: 10px 0;
+}
+
+.card-footer a {
+    text-align: center;
+    font-size: 12px;
+    opacity: 0.8;
+    color: #fff;
+    text-decoration: none;
 }

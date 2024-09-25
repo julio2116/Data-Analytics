@@ -124,6 +124,7 @@ ul{
     width: 100%;
     overflow: hidden;
     position: relative;
+    display: grid;
 }
 main{
     flex:1;
@@ -169,8 +170,8 @@ footer{
     position: absolute;
     display:flex;
     height: auto;
-    align-items: auto;
-    justify-items: auto;
+    align-self: center;
+    justify-self: center;
     color: blue;
     z-index: 4;
 }
@@ -182,6 +183,8 @@ footer{
     border-radius: 2px;
     width:280px;
     opacity: 100%;
+    left: 50%;
+    position:sticky;
 }
 
 .card-header {

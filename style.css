@@ -2,14 +2,6 @@
     margin: 0;
     
 }
-@keyframes animacaoButtom{
-    from{
-        left: 10px;
-    }
-    to{
-        left: 340px;
-    }
-}
 
 ul{
     list-style: none;
@@ -194,6 +186,7 @@ footer{
     opacity: 100%;
     left: 50%;
     position:sticky;
+
 }
 
 .card-header {
